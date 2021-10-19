@@ -3,11 +3,11 @@ job:
  -location
  -job_type
  -description
- -published at
+ -published_at
  -vacancy
  -salary
  -category
- experionce
+ experience
 
  apply job
  post job
@@ -28,3 +28,9 @@ contact:
   -home
 
  login:
+
+
+relationship django:
+   one to many = [user and post]
+   many to many =[user and group]
+   one to one =[user and profile]
